@@ -52,9 +52,8 @@ def oeeHesapla():
         print("Üretim Süresi ile Duruş Süresi aynı olamaz.")
     ka=u/v
     o=1.0
-oee=ku*per*ka*o
-print("%",oee)
-
+    oee=ku*per*ka*o
+    print("%",oee)
 
 #3.Soru
 
