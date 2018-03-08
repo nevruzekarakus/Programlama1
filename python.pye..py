@@ -45,16 +45,18 @@ def oeeHesapla():
     t=int(input("Üretim Miktarını Giriniz:"))
     u=int(input("Sağlam Ürün Miktarını Giriniz:"))
     v=int(input("Toplam Üretim Miktarını Griniz:"))
+    o=1
     ku=(x-y)/x
     if x!=y:
         per=(z*t)/(x-y)
+        ka=u/v
+        oee=ku*per*ka*o
+        print("%",oee)
     else:
         print("Üretim Süresi ile Duruş Süresi aynı olamaz.")
-    ka=u/v
-    o=1.0
-    oee=ku*per*ka*o
-    print("%",oee)
-
+    
+    
+   
 #3.Soru
 
 def adambasiCiro():
