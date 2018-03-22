@@ -68,12 +68,12 @@ while(meCS!=22):
 gPantolon=200
 dÜrün=""
 i=0
-while(dÜrün!=40):
+while True:
     dÜrün=int(input("Defolu Ürün Sayısını Giriniz:"))
-    if (dÜrün>=40):
+    i=i+1
+    if (dÜrün<40):
+        print(i,"günlük defolu ürün sayısı")
+    else:
         print("Defolu ürün sayısı günlük üretilen ürün sayısının yüzde 20 sinden fazladır.")
         break
-    else:
-        x=(i*dÜrün)
-        print("Toplam defolu ürün:",x,"---",i,"günlük defolu ürün sayısı")
-        i=i+1
+        
