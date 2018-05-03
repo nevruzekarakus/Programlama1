@@ -1,41 +1,28 @@
-def donenVarlik():
+def donenVarlik(a,b,c,d,e):
     global donen
-    a=20000
-    b=10000
-    c=5000
-    d=28000
-    e=65000
     donen=a+b+c+d+e
     return donen
-def duranVarlik():
+def duranVarlik(x,y,z):
     global duran
-    x=150000
-    y=25000
-    z=8000
     duran=x+y+z
     return duran
-def kisaVadeli():
+def kisaVadeli(k,l):
     global kisa
-    k=42000
-    l=60000
     kisa=k+l
     return kisa
-def uzunVadeli():
+def uzunVadeli(p,o):
     global uzun
-    p=35000
-    o=115000
     uzun=p+o
     return uzun
-def ozKaynak():
+def ozKaynak(n):
     global oz
-    n=59000
-    m=0
-    oz=m+n
+    oz=n
     return oz
-def toplam_pa():
+def toplam_pa(kisa,uzun,oz):
+    global pasif
     pasif=kisa+uzun+oz
+    return pasif
+def toplam_ak(donen,duran):
+    global aktif
     aktif=donen+duran
-    if aktif==pasif:
-        print("Kapanis bilancosu dogru hesaplanmistir.")
-    else:
-        print("Bilanco yanlis hesaplanmistir")
+    return aktif
